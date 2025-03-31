@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spooky Resort</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Grenze+Gotisch:wght@100..900&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title" id="web-title">Spooky Resorts</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse justify-content-end collapse" id="menu">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#espacos" class="nav-link">
+                            <i class="bi bi-bank me-1"></i>Espaços
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#atividades" class="nav-link">
+                            <i class="bi bi-list-check me-1"></i>Atividades
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contato" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre">
+            <!-- Carrossel -->
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./slides/slide1.png" class="d-block w-100" alt="Espaço interno do restaurante">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./slides/slide2.png" class="d-block w-100" alt="Taças de vinho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./slides/slide3.png" class="d-block w-100" alt="Mesa com comida">
+                    </div>
+                </div>
+
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+
+            <!-- Seção Sobre -->
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="https://preview.redd.it/ob8lvtx93ps71.jpg?auto=webp&s=d973a7729f1f80d4290bbf1ecd4e892a29a099f9" class="img-fluid rounded" alt="Interior do restaurante">
+                    </div>
+                    <div class="col-md-7 mt-4 mt-md-0">
+                        <h2 class="mb-4 section-title">Sobre <span class="text-colored">o Spooky</span></h2>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nulla doloremque aperiam recusandae ratione accusantium quos excepturi fugit in,
+                            distinctio perferendis atque sit. Aliquid sint dignissimos pariatur provident at qui repellat!
+                        </p>
+                        <h3 class="mb-4 section-title">Sobre <span class="text-colored">os espaços</span></h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Obcaecati nisi repudiandae quod fuga ullam eum. Doloribus, repudiandae est nemo, sint cumque
+                            labore excepturi nam ipsum,architecto consectetur sunt suscipit asperiores!
+                        </p>
+                        <ul>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="espacos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row mb-4">
+                    <div>
+                        <h2 class="section-title text-center">Para todos <span  class="text-colored">os gostos</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0">
+                            <img src="https://www.tokyoweekender.com/wp-content/uploads/2024/05/Haunted-Spots-in-Tokyo.jpg" alt="Aniversário" class="d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <h3 class="section-title text-colored fs-4">
+                                    <i class="bi bi-gitlab"></i>
+                                    Japoneses</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptatem fugit placeat eligendi culpa nesciunt asperiores voluptates velit maiores ratione! Praesentium, impedit veniam. Doloribus suscipit veniam harum, consequatur modi autem!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0">
+                            <img src="https://d23.com/app/uploads/2015/07/haunted-mansion-feat2.png" alt="Casamento" class="d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <h3 class="section-title text-colored fs-4">
+                                    <i class="bi bi-stars"></i>
+                                    Europeus</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptatem fugit placeat eligendi culpa nesciunt asperiores voluptates velit maiores ratione! Praesentium, impedit veniam. Doloribus suscipit veniam harum, consequatur modi autem!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0">
+                            <img src="https://thedailyguardian.com/wp-content/uploads/2023/06/take-5-3.jpeg" alt="Confraternização" class="d-block w-100 rounded mb-2">
+                            <div class="card-body">
+                                <h3 class="section-title text-colored fs-4">
+                                    <i class="bi bi-tree"></i>
+                                    Indígenas</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptatem fugit placeat eligendi culpa nesciunt asperiores voluptates velit maiores ratione! Praesentium, impedit veniam. Doloribus suscipit veniam harum, consequatur modi autem!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="atividades" class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title mb-5">Experiências <span class="text-colored">Assombradas</span></h2>
+                
+                <div class="row">
+                    <aside class="col-md-3">
+                        <nav class="nav flex-column nav-atividades">
+                            <button class="rounded nav-link active" data-bs-toggle="tab" data-bs-target="#noite">Aventuras Noturnas</button>
+                            <button class="rounded nav-link" data-bs-toggle="tab" data-bs-target="#rituais">Rituais Ancestrais</button>
+                            <button class="rounded nav-link" data-bs-toggle="tab" data-bs-target="#encontros">Encontros Íntimos</button>
+                            <button class="rounded nav-link" data-bs-toggle="tab" data-bs-target="#expedicoes">Expedições Ousadas</button>
+                            <button class="rounded nav-link" data-bs-toggle="tab" data-bs-target="#desafios">Desafios Extremos</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-9">
+                        <div class="tab-content">
+                            <!-- Aventuras Noturnas -->
+                            <div class="tab-pane active" id="noite">
+                                <div class="row">
+                                    <!-- Card 1 -->
+                                    <div class="col-md-4 d-flex">
+                                        <div class="activity-card h-100 d-flex flex-column">
+                                            <div class="card-image">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMLoxwq3Nq2CLAfvXi6sUSlVH-dhHq_2yV2OOOqIau3MEhZO6xAQhcz27c7pDX7VJHKUY&usqp=CAU" alt="Caça Noturna">
+                                                <span class="cultural-badge">🇯🇵 Yokai Hunt</span>
+                                                <span class="difficulty-badge">⭐️⭐️⭐️</span>
+                                            </div>
+                                            <div class="p-3 flex-grow-1">
+                                                <h4 class="section-title">Caçada aos Onryō</h4>
+                                                <p>Busca noturna por espíritos vingativos japoneses em florestas de bambu, utilizando sinos sagrados e máscaras hannya</p>
+                                                <div class="safety-protocol">
+                                                    <i class="bi bi-shield"></i> Levar amuletos ofuda e manter silêncio absoluto
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <!-- Card 2 -->
+                                    <div class="col-md-4">
+                                        <div class="activity-card h-100 d-flex flex-column">
+                                            <div class="card-image">
+                                                <img src="https://www.worldhistory.org/img/r/p/500x600/9692.jpg?v=1733995111-1733995124" alt="Masmorra">
+                                                <span class="cultural-badge">🇪🇺 Assombração Medieval</span>
+                                                <span class="difficulty-badge">⭐️⭐️⭐️⭐️</span>
+                                            </div>
+                                            <div class="p-3 flex-grow-1">
+                                                <h4 class="section-title">Prisão dos Condenados</h4>
+                                                <p>Exploração noturna de masmorra do século XIV onde prisioneiros políticos foram torturados</p>
+                                                <div class="safety-protocol">
+                                                    <i class="bi bi-shield"></i> Cruz de ferro e água benta obrigatórias
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <!-- Card 3 -->
+                                    <div class="col-md-4">
+                                        <div class="activity-card h-100 d-flex flex-column">
+                                            <div class="card-image">
+                                                <img src="https://i.pinimg.com/564x/66/c1/da/66c1dadd6a46277d5dc92a9023f7b2d9.jpg" alt="Floresta">
+                                                <span class="cultural-badge">🌳 Espíritos da Terra</span>
+                                                <span class="difficulty-badge">⭐️⭐️</span>
+                                            </div>
+                                            <div class="p-3 flex-grow-1">
+                                                <h4 class="section-title">Trilha do Curupira</h4>
+                                                <p>Caminhada noturna guiada por pajé para encontrar o protetor das florestas</p>
+                                                <div class="safety-protocol">
+                                                    <i class="bi bi-shield"></i> Oferecer fumo sagrado ao amanhecer
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Rituais Ancestrais -->
+                            <div class="tab-pane" id="rituais">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="activity-card h-100 d-flex flex-column">
+                                            <div class="card-image">
+                                                <img src="https://i.ytimg.com/vi/G39H5pbe-1A/maxresdefault.jpg" alt="Ritual Japonês">
+                                                <span class="cultural-badge">⛩️ Purificação Shinto</span>
+                                                <span class="difficulty-badge">⭐️⭐️⭐️⭐️</span>
+                                            </div>
+                                            <div class="p-3 flex-grow-1">
+                                                <h4 class="section-title">Cerimônia do Misogi</h4>
+                                                <p>Purificação espiritual sob cachoeira com monges xintoístas para afastar energias negativas</p>
+                                                <div class="safety-protocol">
+                                                    <i class="bi bi-shield"></i> Jejum de 12 horas antes
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-4">
+                                        <div class="activity-card h-100 d-flex flex-column">
+                                            <div class="card-image">
+                                                <img src="https://49native.com/wp-content/uploads/2023/10/Native-American-Rituals-And-Ceremonies-3.webp" alt="Ritual Indígena">
+                                                <span class="cultural-badge">🍃 Medicina Ancestral</span>
+                                                <span class="difficulty-badge">⭐️⭐️⭐️⭐️⭐️</span>
+                                            </div>
+                                            <div class="p-3 flex-grow-1">
+                                                <h4 class="section-title">Jornada com o Xamã</h4>
+                                                <p>Ritual de ayahuasca guiado por pajé experiente da tribo Yawanawá</p>
+                                                <div class="safety-protocol">
+                                                    <i class="bi bi-shield"></i> Dieta especial por 3 dias
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-4">
+                                        <div class="activity-card h-100 d-flex flex-column">
+                                            <div class="card-image">
+                                                <img src="https://i.pinimg.com/736x/88/e5/38/88e538409e2e60f01c3877f8ad8ff07a.jpg" alt="Ritual Europeu">
+                                                <span class="cultural-badge">🔮 Sabá das Bruxas</span>
+                                                <span class="difficulty-badge">⭐️⭐️⭐️⭐️</span>
+                                            </div>
+                                            <div class="p-3 flex-grow-1">
+                                                <h4 class="section-title">Círculo de Pedras</h4>
+                                                <p>Reconstituição de ritual druida em círculo de pedras milenar</p>
+                                                <div class="safety-protocol">
+                                                    <i class="bi bi-shield"></i> Não pronunciar nomes cristãos
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Encontros Íntimos -->
+                            <div class="tab-pane" id="encontros">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="activity-card h-100 d-flex flex-column">
+                                            <div class="card-image">
+                                                <img src="https://static.wixstatic.com/media/e9e174_242618f2381548aa8e37655a390a61d9~mv2.jpg/v1/fill/w_560,h_582,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ladyinwhite3.jpg" alt="Dama Branca">
+                                                <span class="cultural-badge">👻 Aparição Clássica</span>
+                                                <span class="difficulty-badge">⭐️⭐️⭐️</span>
+                                            </div>
+                                            <div class="p-3 flex-grow-1">
+                                                <h4 class="section-title">Jantar com a Dama de Branco</h4>
+                                                <p>Refeição à luz de velas com entidade que assombra corredores desde 1890</p>
+                                                <div class="safety-protocol">
+                                                    <i class="bi bi-shield"></i> Não mencionar seu nome verdadeiro
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-4">
+                                        <div class="activity-card h-100 d-flex flex-column">
+                                            <div class="card-image">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5dRXYt4rcWc2DtEB3GP6Yn6zYOiNQlXV6kg&s" alt="Kitsune">
+                                                <span class="cultural-badge">🦊 Espírito Raposa</span>
+                                                <span class="difficulty-badge">⭐️⭐️⭐️⭐️</span>
+                                            </div>
+                                            <div class="p-3 flex-grow-1">
+                                                <h4 class="section-title">Pacto com Kitsune</h4>
+                                                <p>Negociação com espírito raposa em templo abandonado</p>
+                                                <div class="safety-protocol">
+                                                    <i class="bi bi-shield"></i> Oferecer tofu frito como tributo
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-4">
+                                        <div class="activity-card h-100 d-flex flex-column">
+                                            <div class="card-image">
+                                                <img src="https://allthatsinteresting.com/wordpress/wp-content/uploads/2021/10/ghost-witch.jpg" alt="Ancião">
+                                                <span class="cultural-badge">🧙♂️ Sabedoria Ancestral</span>
+                                                <span class="difficulty-badge">⭐️⭐️</span>
+                                            </div>
+                                            <div class="p-3 flex-grow-1">
+                                                <h4 class="section-title">Conselho com Pajé</h4>
+                                                <p>Conversa particular com líder espiritual em oca sagrada</p>
+                                                <div class="safety-protocol">
+                                                    <i class="bi bi-shield"></i> Respeitar silêncio cerimonial
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Expedições Ousadas -->
+                            <div class="tab-pane" id="expedicoes">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="activity-card h-100 d-flex flex-column">
+                                            <div class="card-image">
+                                                <img src="https://portalconteudoaberto.com.br/wp-content/uploads/2023/08/maxresdefault.jpg" alt="Mapinguari">
+                                                <span class="cultural-badge">🌴 Criatura Lendária</span>
+                                                <span class="difficulty-badge">⭐️⭐️⭐️⭐️⭐️</span>
+                                            </div>
+                                            <div class="p-3 flex-grow-1">
+                                                <h4 class="section-title">Caça ao Mapinguari</h4>
+                                                <p>Expedição de 3 dias na selva em busca da criatura guardiã</p>
+                                                <div class="safety-protocol">
+                                                    <i class="bi bi-shield"></i> Armadilhas especiais obrigatórias
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-4">
+                                        <div class="activity-card h-100 d-flex flex-column">
+                                            <div class="card-image">
+                                                <img src="https://i.ytimg.com/vi/xH1wev__pSg/maxresdefault.jpg" alt="Cidade Submersa">
+                                                <span class="cultural-badge">🏯 Lenda Urbana</span>
+                                                <span class="difficulty-badge">⭐️⭐️⭐️⭐️</span>
+                                            </div>
+                                            <div class="p-3 flex-grow-1">
+                                                <h4 class="section-title">Cidade dos Kappas</h4>
+                                                <p>Exploração subaquática de ruínas habitadas por criaturas aquáticas</p>
+                                                <div class="safety-protocol">
+                                                    <i class="bi bi-shield"></i> Levar pepinos como oferenda
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-4">
+                                        <div class="activity-card h-100 d-flex flex-column">
+                                            <div class="card-image">
+                                                <img src="https://indielisboa.com/wp-content/uploads/2023/04/The20castle20of20Otranto201-2.jpg" alt="Castelo">
+                                                <span class="cultural-badge">🏰 Assombração Real</span>
+                                                <span class="difficulty-badge">⭐️⭐️⭐️</span>
+                                            </div>
+                                            <div class="p-3 flex-grow-1">
+                                                <h4 class="section-title">Torre da Rainha Fantasma</h4>
+                                                <p>Subida noturna à torre onde nobre se suicidou em 1603</p>
+                                                <div class="safety-protocol">
+                                                    <i class="bi bi-shield"></i> Não aceitar presentes da entidade
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Desafios Extremos -->
+                            <div class="tab-pane" id="desafios">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="activity-card h-100 d-flex flex-column">
+                                            <div class="card-image">
+                                                <img src="https://yokai.com/wordpress/wp-content/uploads/2018/03/yanari.jpg" alt="Demônio Japonês">
+                                                <span class="cultural-badge">😈 Provação Final</span>
+                                                <span class="difficulty-badge">⭐️⭐️⭐️⭐️⭐️</span>
+                                            </div>
+                                            <div class="p-3 flex-grow-1">
+                                                <h4 class="section-title">Noite com o Yanari</h4>
+                                                <p>24 horas trancado em sala com demônio das montanhas</p>
+                                                <div class="safety-protocol">
+                                                    <i class="bi bi-shield"></i> Símbolos de proteção limitados
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-4">
+                                        <div class="activity-card h-100 d-flex flex-column">
+                                            <div class="card-image">
+                                                <img src="https://i.pinimg.com/736x/32/ef/b6/32efb63f20d147abed6c485b32bc071a.jpg" alt="Vampiro">
+                                                <span class="cultural-badge">🧛 Teste de Sangue</span>
+                                                <span class="difficulty-badge">⭐️⭐️⭐️⭐️⭐️</span>
+                                            </div>
+                                            <div class="p-3 flex-grow-1">
+                                                <h4 class="section-title">Convite Vampírico</h4>
+                                                <p>Jantar privativo com vampiro ancestral em caixão selado</p>
+                                                <div class="safety-protocol">
+                                                    <i class="bi bi-shield"></i> Colar de alho proibido
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-4">
+                                        <div class="activity-card h-100 d-flex flex-column">
+                                            <div class="card-image">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Hanuman_playing_with_the_fire.jpg" alt="Ritual">
+                                                <span class="cultural-badge">🔥 Provação Xamânica</span>
+                                                <span class="difficulty-badge">⭐️⭐️⭐️⭐️⭐️</span>
+                                            </div>
+                                            <div class="p-3 flex-grow-1">
+                                                <h4 class="section-title">Dança do Fogo</h4>
+                                                <p>Cerimônia de iniciação com brasas e espíritos elementares</p>
+                                                <div class="safety-protocol">
+                                                    <i class="bi bi-shield"></i> Proteção espiritual limitada
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <div id="form-message" class="alert d-none mb-4"></div>
+                        <form id="form-contato" class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Nome:</label>
+                                <input type="text" id="nome" class="form-control" required minlength="3">
+                                <div class="invalid-feedback">Por favor, insira pelo menos 3 caracteres</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">E-mail:</label>
+                                <input type="email" id="email" class="form-control" required>
+                                <div class="invalid-feedback">Por favor, insira um e-mail válido</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tel" class="form-label fw-bold text-colored">Telefone (opcional):</label>
+                                <input type="tel" id="tel" class="form-control" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}">
+                                <div class="invalid-feedback">Formato esperado: (99) 99999-9999</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem:</label>
+                                <textarea class="form-control" id="mensagem" required minlength="10"></textarea>
+                                <div class="invalid-feedback">A mensagem deve ter pelo menos 10 caracteres</div>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="text-colored bi bi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="text-colored bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="text-colored bi bi-whatsapp"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Nos ache aqui
+                            </h3>
+                            <p>Rua Teste, nº 123 - Centro, Rio de Janeiro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Máscaras
+            $('#tel').mask('(00) 00000-0000');
+            
+            const form = document.getElementById('form-contato');
+            const formMessage = document.getElementById('form-message');
+    
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+    
+                // Validação do telefone
+                const telInput = document.getElementById('tel');
+                if (telInput.value && !/^\(\d{2}\) \d{4,5}-\d{4}$/.test(telInput.value)) {
+                    telInput.setCustomValidity('Formato inválido');
+                } else {
+                    telInput.setCustomValidity('');
+                }
+    
+                if (form.checkValidity()) {
+                    // Mostra mensagem HTML
+                    formMessage.classList.remove('d-none', 'alert-danger', 'alert-success');
+                    formMessage.classList.add('alert-success');
+                    formMessage.innerHTML = `
+                        <i class="bi bi-check-circle-fill"></i>
+                        Mensagem enviada com sucesso! Em breve entraremos em contato.
+                    `;
+    
+                    // Scroll para mensagem
+                    formMessage.scrollIntoView({ behavior: 'smooth' });
+    
+                    // Reset e limpeza após 5 segundos
+                    setTimeout(() => {
+                        form.reset();
+                        form.classList.remove('was-validated');
+                        formMessage.classList.add('d-none');
+                        
+                        // Remove classes de validação dos inputs
+                        document.querySelectorAll('.is-valid, .is-invalid').forEach(el => {
+                            el.classList.remove('is-valid', 'is-invalid');
+                        });
+                    }, 5000);
+    
+                } else {
+                    formMessage.classList.remove('d-none', 'alert-success');
+                    formMessage.classList.add('alert-danger');
+                    formMessage.innerHTML = `
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                        Preencha todos os campos obrigatórios corretamente!
+                    `;
+                    
+                    form.classList.add('was-validated');
+                    
+                    // Scroll para o primeiro erro
+                    const invalidElements = form.querySelectorAll(':invalid');
+                    invalidElements[0].scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                }
+            });
+    
+            // Validação em tempo real (mantém igual ao anterior)
+            form.addEventListener('input', function(e) {
+                const input = e.target;
+                
+                if(input.id === 'tel') {
+                    const pattern = /^\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}$/;
+                    if(input.value && !pattern.test(input.value)) {
+                        input.setCustomValidity('Número inválido');
+                    } else {
+                        input.setCustomValidity('');
+                    }
+                }
+                
+                input.classList.remove('is-valid', 'is-invalid');
+                
+                if(input.checkValidity()) {
+                    input.classList.add('is-valid');
+                } else {
+                    input.classList.add('is-invalid');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
